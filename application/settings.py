@@ -36,6 +36,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
+    #Debug Toolbar
+    'debug_toolbar.apps.DebugToolbarConfig',
+
+    #ExchangeRates App
     'exchangerates',
 )
 
