@@ -1,7 +1,7 @@
 # Django Zato Example: Proof of concept
 
 ## Development setup
-* Ubuntu Server 14.04 LTS (Trusty) amd64 Virtual Machine running in Hyper-V on Windows 8 Pro
+* Ubuntu Server 14.04 LTS (Trusty) amd64 Virtual Machine (in my setup, it's running in Hyper-V on Windows 8 Pro, but any hypervisor will do I guess)
 * Packages / software:
     1. Postgresql 9.3: https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-14-04
     2. Redis (Latest): http://tosbourn.com/install-latest-version-redis-ubuntu/
