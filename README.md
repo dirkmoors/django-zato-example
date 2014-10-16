@@ -10,7 +10,7 @@
     1. Configure PostgreSQL user (e.g. "zato") and a database for this user (e.g. "django-zato-db")
     2. Configure Zato project (quickstart): https://zato.io/docs/admin/cli/quickstart-create.html
     3. Configure Zato services that will be used in the Django Zato Example project: https://zato.io/blog/posts/django-web-services-integration.html
-    4. Do not use the exchangerates.py script in the previous link, use the one that can be found in this repo under "services". Deploy that script.
+    4. Do not use the exchangerates.py script in the previous link, use the one that can be found in this repo under "services". "Hot-Deploy" that script.
     5. Check and update Zato configuration parameters, see application/settings.py in this repo
 * Run django service and go to http://localhost:8000 (or whatever url your django service is running on)
 * Profit!
