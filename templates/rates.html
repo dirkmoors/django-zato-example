@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+    <title>Zato-Django Integration</title>
+	<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+	<style>
+		body {
+			padding:10px;
+		}
+		
+		#rates tr{
+			font-size:large;
+			border-bottom:1px solid #999;
+		}
+		
+		#rates th {
+			border:1px solid #999;
+			background-color:#dde;
+			padding:9px;
+		}
+		
+		#rates td {
+			border-right:1px solid #999;
+			border-left:1px solid #999;
+			padding:14px;
+		}
+		
+	</style>
+</head>
+<body>
+
+	
+	<div>
+		Try USD, HUF, GBP, MXN, AUD, NOK etc.
+	</div>
+
+	<form action="." method="get">
+		From EUR to
+		<input type="text" name="to" value="{{ to }}" />
+		<input type="submit" value="Get exchange rates" />
+	</form>
+
+	<table id="rates">
+		<tr>
+			<th>Provider</th>
+			<th>Rate</th>
+			<th>Timestamp (UTC)</th>
+		</tr>
+		{% for elem in data %}
+		<tr>
+			<td>{{ elem.provider }}</td>
+			<td>{{ elem.rate }}</td>
+			<td>{{ elem.ts }}</td>
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>
