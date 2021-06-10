@@ -1,5 +1,5 @@
 Distutils2==1.0a4
-Django==1.7
+Django==2.2.24
 anyjson==0.3.3
 bunch==1.0.1
 bzr==2.2.3
